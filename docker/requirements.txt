@@ -1,0 +1,13 @@
+gradio
+pdfplumber
+python-docx
+numpy
+pandas
+python-dotenv
+python-dateutil
+scikit-learn
+#sentence-transformers
+qdrant-client
+groq
+#spacy
+#bertopic

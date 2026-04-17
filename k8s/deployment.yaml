@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ai-doc-intelligence
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: ai-doc
+  template:
+    metadata:
+      labels:
+        app: ai-doc
+    spec:
+      containers:
+      - name: ai-doc
+        image: shivapalakshasg/ai-doc-intelligence
+        ports:
+        - containerPort: 7860
