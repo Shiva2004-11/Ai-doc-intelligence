@@ -24,7 +24,7 @@ jobs:
 
       - name: Run Unit Tests
         run: |
-          pytest || echo "No tests found, continuing..."
+          python -m pytest test_app.py
 
       - name: Build Docker Image
         run: |
